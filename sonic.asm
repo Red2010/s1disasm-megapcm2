@@ -327,7 +327,7 @@ CheckSumCheck:
 		bhs.s	.loop
 		movea.l	#Checksum,a1	; read the checksum
 		cmp.w	(a1),d1		; compare checksum in header to ROM
-		bne.w	CheckSumError	; if they don't match, branch
+		bne.w	CheckSumOk	; if they don't match, branch
 
 CheckSumOk:
 		lea	(v_crossresetram).w,a6

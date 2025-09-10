@@ -5,7 +5,7 @@ SampleTable:
 	dcSample	TYPE_DPCM, 		Kick, 		8000				; $81
 	dcSample	TYPE_PCM,		Snare,		24000				; $82
 	dcSample	TYPE_DPCM, 		Timpani, 	7250				; $83
-	dcSample	TYPE_NONE										; $84
+	dcSample	TYPE_DPCM,              InTheEnd,       8000, FLAGS_LOOP				; $84 In the End by Linkin Park
 	dcSample	TYPE_NONE										; $85
 	dcSample	TYPE_NONE										; $86
 	dcSample	TYPE_NONE										; $87
@@ -21,4 +21,5 @@ SampleTable:
 	incdac	Snare, "sound/dac/snare.pcm"
 	incdac	Timpani, "sound/dac/timpani.dpcm"
 	incdac	SegaPCM, "sound/dac/sega.wav"
+	incdac	InTheEnd, "sound/dac/InTheEnd.bin"
 	even
